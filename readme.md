@@ -40,4 +40,4 @@
   3. python app.py
 
 ## Client Demo Show
-![SR_Demo](//tvax1.sinaimg.cn/large/005tpOh1ly1gqj8lcrr64j31h90sqdwd.jpg)
+![SR_Demo](https://tvax2.sinaimg.cn/large/005tpOh1ly1gqj8lcrr64j31h90sqdwd.jpg)
