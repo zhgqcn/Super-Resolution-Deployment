@@ -27,9 +27,9 @@
 > Using Pyqt5 and Qt Designer to make a GUI App.
 
 ## technology stack
-  1. Qt Designer and pyqt5
-    -	https://www.cnblogs.com/zgqcn/p/14396977.html
-    -	main function : Signal & Slot
+  1. Qt Designer and pyqt5  
+    -	https://www.cnblogs.com/zgqcn/p/14396977.html  
+    -	main function : Signal & Slot  
   2. request APi
     -	Post method
     -	Get method
