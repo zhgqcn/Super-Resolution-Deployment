@@ -1,4 +1,4 @@
-# SERVE
+# SERVER
 > Using Flask and Python and Pytorch to build a server to deal with super resolution process.
 
 ## technology stack
