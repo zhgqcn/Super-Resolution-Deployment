@@ -1,0 +1,7 @@
+﻿flask
+opencv-python
+pillow
+numpy
+scikit-image
+matplotlib
+

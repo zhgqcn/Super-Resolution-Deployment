@@ -1,0 +1,74 @@
+<!doctype html>
+<title>Upload new File</title>
+<head>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .column {
+      float: left;
+      width: 50%;
+      padding: 5px;
+    }
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    @media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.input {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <h1>Super Resolution Image</h1>
+
+        {% if image_name %}
+            <div class="row" align="center">
+
+                <div class="column">
+                    <h1>Output Image X2</h1>
+                    <img src="static/output/X2/X2_{{image_name}}.png" height=512px width=512px />
+
+                    <form action="{{ url_for('download_img', filename='X2/' + 'X2_' + image_name + '.png')}}" method="get" enctype='multipart/form-data'>
+                        <input class="input" type="submit" name="download" value="Download">
+                    </form>
+
+                </div>
+
+
+                <div class="column">
+                    <h1>Output Image X4</h1>
+                    <img src="static/output/X4/X4_{{image_name}}.png" height=512px width=512px />
+
+                    <form action="{{ url_for('download_img', filename='X4/' + 'X4_' + image_name + '.png')}}" method="get" enctype='multipart/form-data'>
+                        <input class="input" type="submit" name="download" value="Download">
+                    </form>
+                </div>
+
+                <form action="{{ url_for('upload_predict')}}" method="get" enctype='multipart/form-data'>
+                        <input class="input" type="submit" name="Continue" value="Continue">
+                </form>
+
+            </div>
+        {%endif%}
+    </div>
+</body>
